@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chave Mestra Cast | Consciência & Transformação</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ LOADER ═══════════════════════════════ -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-mic">
+        <svg viewBox="0 0 80 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFD97D"/>
+              <stop offset="50%" stop-color="#C9A84C"/>
+              <stop offset="100%" stop-color="#7B5C1A"/>
+            </linearGradient>
+          </defs>
+          <!-- Mic body -->
+          <rect x="25" y="5" width="30" height="50" rx="15" fill="url(#goldGrad)"/>
+          <!-- Mic stand arm -->
+          <path d="M10 45 Q10 75 40 75 Q70 75 70 45" stroke="url(#goldGrad)" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <!-- Stand base -->
+          <line x1="40" y1="75" x2="40" y2="92" stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round"/>
+          <line x1="24" y1="92" x2="56" y2="92" stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round"/>
+          <!-- Mic grille lines -->
+          <line x1="32" y1="22" x2="48" y2="22" stroke="rgba(0,0,0,0.3)" stroke-width="2" stroke-linecap="round"/>
+          <line x1="30" y1="30" x2="50" y2="30" stroke="rgba(0,0,0,0.3)" stroke-width="2" stroke-linecap="round"/>
+          <line x1="32" y1="38" x2="48" y2="38" stroke="rgba(0,0,0,0.3)" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="loader-text">
+        <span class="loader-chave">CHAVE</span>
+        <span class="loader-mestra">MESTRA</span>
+        <span class="loader-cast">CAST</span>
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar"></div>
+      </div>
+      <p class="loader-tagline">Consciência &amp; Transformação</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════ HEADER ═══════════════════════════════ -->
+  <header id="header">
+    <div class="header-inner container">
+      <a href="#hero" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 40 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="1" width="20" height="30" rx="10" fill="url(#goldGradSm)"/>
+            <defs>
+              <linearGradient id="goldGradSm" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFD97D"/>
+                <stop offset="100%" stop-color="#C9A84C"/>
+              </linearGradient>
+            </defs>
+            <path d="M4 24 Q4 40 20 40 Q36 40 36 24" stroke="url(#goldGradSm)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <line x1="20" y1="40" x2="20" y2="48" stroke="url(#goldGradSm)" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="11" y1="48" x2="29" y2="48" stroke="url(#goldGradSm)" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">CHAVE MESTRA</span>
+          <span class="logo-sub">CAST</span>
+        </div>
+      </a>
+
+      <nav id="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#apresentadoras">Apresentadoras</a>
+        <a href="#episodios">Episódios</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" aria-label="Alternar tema">
+          <span class="sun-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </span>
+          <span class="moon-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+          </span>
+        </button>
+        <a href="#contato" class="btn btn-gold btn-sm">Participar</a>
+        <button id="menuToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════ HERO ════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg-orbs">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+    </div>
+    <div class="hero-video-wrap">
+      <!-- VIDEO PLACEHOLDER PRINCIPAL -->
+      <div class="video-placeholder hero-video" data-label="Vídeo Teaser Principal">
+        <div class="vp-inner">
+          
+          <p>Insira o vídeo teaser aqui</p>
+          <span>Recomendado: 1920×1080px · MP4</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-content container">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span> Novo episódio disponível
+      </div>
+      <h1 class="hero-title reveal">
+        A chave que<br/>
+        <em>liberta está</em><br/>
+        dentro de você
+      </h1>
+      <p class="hero-sub reveal">
+        Um podcast que atravessa corpo, alma e espírito. Sem superficialidade,
+        sem fórmulas prontas, apenas presença, consciência e direção.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#episodios" class="btn btn-gold">Ouvir Agora</a>
+        <a href="#sobre" class="btn btn-outline">Conheça o Projeto</a>
+      </div>
+      <div class="hero-platforms reveal">
+        <span>Disponível em</span>
+        <div class="platforms">
+          <div class="platform-badge">Spotify</div>
+          <div class="platform-badge">Apple Podcasts</div>
+          <div class="platform-badge">YouTube</div>
+          <div class="platform-badge">Deezer</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Role para explorar</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ SOBRE ════════════════════════════════ -->
+  <section id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-visual reveal">
+          <!-- IMAGE PLACEHOLDER -->
+          <div class="img-placeholder tall" data-label="Imagem Conceitual do Podcast">
+            <div class="ip-inner">
+              <div class="ip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
+              <p>Insira uma imagem aqui</p>
+              <span>Recomendado: 800×1000px · JPG/WebP</span>
+            </div>
+          </div>
+          <div class="sobre-quote-card">
+            <p>"Um território silencioso, onde habitam as dores não ditas… e a chave que liberta."</p>
+          </div>
+        </div>
+        <div class="sobre-text reveal">
+          <div class="section-tag">Sobre o Podcast</div>
+          <h2 class="section-title">Um espaço de escuta,<br/><em>profundidade e verdade</em></h2>
+          <p>O Chave Mestra nasce de uma travessia interna ,  solitária, desafiadora e profundamente transformadora. Uma jornada até os recônditos da alma, onde encontramos tanto as prisões quanto os caminhos de liberdade.</p>
+          <p>Mais do que um podcast, é um encontro. Um lugar onde histórias não são apenas contadas ,  são sentidas, elaboradas e ressignificadas.</p>
+          <div class="sobre-stats">
+            <div class="stat-item">
+              <strong>50+</strong>
+              <span>Episódios</span>
+            </div>
+            <div class="stat-item">
+              <strong>10K+</strong>
+              <span>Ouvintes</span>
+            </div>
+            <div class="stat-item">
+              <strong>4</strong>
+              <span>Plataformas</span>
+            </div>
+          </div>
+          <a href="#episodios" class="btn btn-gold">Explorar Episódios</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════════════════════ APRESENTADORAS ══════════════════════════════ -->
+  <section id="apresentadoras">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Quem Somos</div>
+        <h2 class="section-title">As <em>Apresentadoras</em></h2>
+        <p class="section-desc">Duas mulheres que não escolheram apenas uma profissão ,  responderam a um chamado conduzido por Deus, moldadas pela própria experiência.</p>
+      </div>
+      <div class="hosts-grid">
+        <!-- HOST 1 -->
+        <div class="host-card reveal">
+          <div class="host-img-wrap">
+            <!-- IMAGE PLACEHOLDER VIVIANE -->
+            <div class="img-placeholder host-img" data-label="Foto de Viviane Schott">
+              <div class="ip-inner">
+                <div class="ip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+                <p>Foto de Viviane Schott</p>
+                <span>Quadrada · 600×600px</span>
+              </div>
+            </div>
+            <div class="host-badge">Psicoterapeuta</div>
+          </div>
+          <div class="host-info">
+            <h3>Viviane Schott</h3>
+            <p>Psicoterapeuta com vasta experiência em processos de autoconhecimento e transformação feminina. Atravessou sua própria jornada interna e hoje conduz outras mulheres nesse caminho de libertação e consciência.</p>
+            <div class="host-social">
+              <a href="#" class="social-link" aria-label="Instagram Viviane">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- HOST 2 -->
+        <div class="host-card reveal">
+          <div class="host-img-wrap">
+            <!-- IMAGE PLACEHOLDER LUANA -->
+            <div class="img-placeholder host-img" data-label="Foto de Luana Carriello">
+              <div class="ip-inner">
+                <div class="ip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+                <p>Foto de Luana Carriello</p>
+                <span>Quadrada · 600×600px</span>
+              </div>
+            </div>
+            <div class="host-badge">Psicanalista</div>
+          </div>
+          <div class="host-info">
+            <h3>Luana Carriello</h3>
+            <p>Psicanalista contemporânea que une rigor técnico com profundidade humana. Especializada em padrões inconscientes que aprisionam e nos caminhos que levam à liberdade emocional e ao florescimento feminino.</p>
+            <div class="host-social">
+              <a href="#" class="social-link" aria-label="Instagram Luana">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ EPISÓDIOS ════════════════════════════════ -->
+  <section id="episodios">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Conteúdo</div>
+        <h2 class="section-title">Episódios em <em>Destaque</em></h2>
+        <p class="section-desc">Cada episódio é um convite para descer mais fundo ,  para conhecer, nomear e transformar.</p>
+      </div>
+
+      <div class="carousel-wrap">
+        <div class="carousel" id="episodiosCarousel">
+
+          <!-- EPISODE CARD 1 -->
+          <div class="ep-card">
+            <div class="ep-thumb">
+              <!-- VIDEO/IMAGE PLACEHOLDER -->
+              <div class="video-placeholder ep-video" data-label="Thumbnail Ep. 01">
+                <div class="vp-inner"><div class="vp-icon">▶</div><p>Ep. 01</p></div>
+              </div>
+            </div>
+            <div class="ep-info">
+              <span class="ep-num">Episódio 01</span>
+              <h3>A travessia interna que ninguém te conta</h3>
+              <p>Como o autoconhecimento começa ,  e por que a maioria das pessoas evita esse caminho.</p>
+              <div class="ep-meta">
+                <span>58 min</span>
+                <a href="#" class="btn btn-gold btn-sm">Ouvir</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- EPISODE CARD 2 -->
+          <div class="ep-card">
+            <div class="ep-thumb">
+              <div class="video-placeholder ep-video" data-label="Thumbnail Ep. 02">
+                <div class="vp-inner"><div class="vp-icon">▶</div><p>Ep. 02</p></div>
+              </div>
+            </div>
+            <div class="ep-info">
+              <span class="ep-num">Episódio 02</span>
+              <h3>Padrões que aprisionam: reconheça os seus</h3>
+              <p>Os ciclos que se repetem na vida das mulheres e como a psicanálise os revela.</p>
+              <div class="ep-meta">
+                <span>1h 12min</span>
+                <a href="#" class="btn btn-gold btn-sm">Ouvir</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- EPISODE CARD 3 -->
+          <div class="ep-card">
+            <div class="ep-thumb">
+              <div class="video-placeholder ep-video" data-label="Thumbnail Ep. 03">
+                <div class="vp-inner"><div class="vp-icon">▶</div><p>Ep. 03</p></div>
+              </div>
+            </div>
+            <div class="ep-info">
+              <span class="ep-num">Episódio 03</span>
+              <h3>Corpo, alma e espírito: a mulher inteira</h3>
+              <p>A integração entre as dimensões humanas como caminho para a saúde real.</p>
+              <div class="ep-meta">
+                <span>1h 04min</span>
+                <a href="#" class="btn btn-gold btn-sm">Ouvir</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- EPISODE CARD 4 -->
+          <div class="ep-card">
+            <div class="ep-thumb">
+              <div class="video-placeholder ep-video" data-label="Thumbnail Ep. 04">
+                <div class="vp-inner"><div class="vp-icon">▶</div><p>Ep. 04</p></div>
+              </div>
+            </div>
+            <div class="ep-info">
+              <span class="ep-num">Episódio 04</span>
+              <h3>Dores não ditas: o peso do silêncio</h3>
+              <p>O que acontece quando emoções são suprimidas e como isso afeta o corpo e a mente.</p>
+              <div class="ep-meta">
+                <span>55 min</span>
+                <a href="#" class="btn btn-gold btn-sm">Ouvir</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- EPISODE CARD 5 -->
+          <div class="ep-card">
+            <div class="ep-thumb">
+              <div class="video-placeholder ep-video" data-label="Thumbnail Ep. 05">
+                <div class="vp-inner"><div class="vp-icon">▶</div><p>Ep. 05</p></div>
+              </div>
+            </div>
+            <div class="ep-info">
+              <span class="ep-num">Episódio 05</span>
+              <h3>A chave que liberta: encontrando sua verdade</h3>
+              <p>Como ressignificar a própria história e emergir de padrões de aprisionamento emocional.</p>
+              <div class="ep-meta">
+                <span>1h 20min</span>
+                <a href="#" class="btn btn-gold btn-sm">Ouvir</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+          <div class="carousel-dots" id="episodiosDots"></div>
+          <button class="carousel-btn next" aria-label="Próximo">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ VÍDEO DESTAQUE ══════════════════════════════ -->
+  <section id="video-destaque">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Assista</div>
+        <h2 class="section-title">Veja o <em>Podcast em Ação</em></h2>
+      </div>
+      <div class="video-grid reveal">
+        <!-- VIDEO PLACEHOLDER 1 -->
+        <div class="video-placeholder featured-video" data-label="Vídeo Episódio Completo">
+          <div class="vp-inner">
+            <div class="vp-icon">▶</div>
+            <p>Episódio Completo em Vídeo</p>
+            <span>YouTube embed ou arquivo de vídeo</span>
+          </div>
+        </div>
+        <div class="video-side-stack">
+          <!-- VIDEO PLACEHOLDER 2 -->
+          <div class="video-placeholder side-video" data-label="Vídeo Clipe / Teaser">
+            <div class="vp-inner">
+              <div class="vp-icon">▶</div>
+              <p>Clipe / Shorts</p>
+            </div>
+          </div>
+          <!-- VIDEO PLACEHOLDER 3 -->
+          <div class="video-placeholder side-video" data-label="Behind the Scenes">
+            <div class="vp-inner">
+              <div class="vp-icon">▶</div>
+              <p>Bastidores</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ DEPOIMENTOS ══════════════════════════════ -->
+  <section id="depoimentos">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Impacto Real</div>
+        <h2 class="section-title">O que dizem as <em>Ouvintes</em></h2>
+      </div>
+      <div class="testimonials-carousel">
+        <div class="testimonials-track" id="testimonialsTrack">
+
+          <div class="testimonial-card">
+            <div class="stars"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <p>"O Chave Mestra mudou a forma como eu me vejo. Cada episódio é uma sessão de terapia gratuita. Nunca imaginei que um podcast pudesse me fazer chorar e sorrir ao mesmo tempo."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: linear-gradient(135deg,#C9A84C,#7B5C1A)">M</div>
+              <div>
+                <strong>Mariana C.</strong>
+                <span>Ouvinte fiel desde o ep. 01</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <p>"Viviane e Luana têm um dom especial de tocar no que dói sem machucar. A profundidade das conversas é rara. Recomendo para toda mulher que quer se conhecer de verdade."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: linear-gradient(135deg,#9B8B5A,#C9A84C)">P</div>
+              <div>
+                <strong>Patricia R.</strong>
+                <span>Psicóloga e ouvinte</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <p>"Depois de ouvir o episódio sobre padrões que aprisionam, decidi finalmente buscar terapia. O podcast foi o primeiro passo da minha transformação. Gratidão imensa."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: linear-gradient(135deg,#C9A84C,#FFD97D)">A</div>
+              <div>
+                <strong>Ana Luíza B.</strong>
+                <span>Terapeuta e mãe</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <p>"Conteúdo que vai além do óbvio. Sem clichês, sem julgamentos. Um espaço genuíno de escuta e acolhimento. É o podcast que eu precisava encontrar há anos."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: linear-gradient(135deg,#7B5C1A,#C9A84C)">C</div>
+              <div>
+                <strong>Camila F.</strong>
+                <span>Empreendedora</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" id="testPrev">&#8592;</button>
+          <div class="carousel-dots" id="testDots"></div>
+          <button class="carousel-btn next" id="testNext">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════════════════════ PATROCINADORES ══════════════════════════════ -->
+  <section id="patrocinadores">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Parceiros</div>
+        <h2 class="section-title">Marcas que <em>Acreditam</em> no Projeto</h2>
+      </div>
+      <div class="sponsors-track-wrap reveal">
+        <div class="sponsors-track">
+          <!-- SPONSOR PLACEHOLDERS - Substitua por logos reais -->
+          <div class="sponsor-logo" data-label="Logo Patrocinador 1">
+            <div class="sp-inner"><span>Marca 01</span></div>
+          </div>
+          <div class="sponsor-logo" data-label="Logo Patrocinador 2">
+            <div class="sp-inner"><span>Marca 02</span></div>
+          </div>
+          <div class="sponsor-logo" data-label="Logo Patrocinador 3">
+            <div class="sp-inner"><span>Marca 03</span></div>
+          </div>
+          <div class="sponsor-logo" data-label="Logo Patrocinador 4">
+            <div class="sp-inner"><span>Marca 04</span></div>
+          </div>
+          <div class="sponsor-logo" data-label="Logo Patrocinador 5">
+            <div class="sp-inner"><span>Marca 05</span></div>
+          </div>
+          <div class="sponsor-logo" data-label="Logo Patrocinador 6">
+            <div class="sp-inner"><span>Marca 06</span></div>
+          </div>
+          <!-- Duplicate for infinite scroll -->
+          <div class="sponsor-logo"><div class="sp-inner"><span>Marca 01</span></div></div>
+          <div class="sponsor-logo"><div class="sp-inner"><span>Marca 02</span></div></div>
+          <div class="sponsor-logo"><div class="sp-inner"><span>Marca 03</span></div></div>
+          <div class="sponsor-logo"><div class="sp-inner"><span>Marca 04</span></div></div>
+          <div class="sponsor-logo"><div class="sp-inner"><span>Marca 05</span></div></div>
+          <div class="sponsor-logo"><div class="sp-inner"><span>Marca 06</span></div></div>
+        </div>
+      </div>
+      <div class="sponsor-cta reveal">
+        <p>Quer que sua marca faça parte desse movimento de transformação?</p>
+        <a href="#contato" class="btn btn-gold">Seja Parceiro</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ GALERIA ══════════════════════════════════ -->
+  <section id="galeria">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Bastidores</div>
+        <h2 class="section-title">Momentos <em>Reais</em></h2>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="img-placeholder gal-img tall2" data-label="Foto de Bastidores 1">
+          <div class="ip-inner"><div class="ip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div><p>Bastidores</p></div>
+        </div>
+        <div class="gallery-col">
+          <div class="img-placeholder gal-img" data-label="Foto de Bastidores 2">
+            <div class="ip-inner"><div class="ip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div><p>Gravação</p></div>
+          </div>
+          <div class="img-placeholder gal-img" data-label="Foto de Bastidores 3">
+            <div class="ip-inner"><div class="ip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div><p>Studio</p></div>
+          </div>
+        </div>
+        <div class="gallery-col">
+          <div class="img-placeholder gal-img" data-label="Foto de Bastidores 4">
+            <div class="ip-inner"><div class="ip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div><p>Entrevista</p></div>
+          </div>
+          <div class="img-placeholder gal-img" data-label="Foto de Bastidores 5">
+            <div class="ip-inner"><div class="ip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div><p>Momento</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CONVITE/CTA ══════════════════════════════ -->
+  <section id="convite">
+    <div class="convite-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+    </div>
+    <div class="container">
+      <div class="convite-content reveal">
+        <div class="convite-icon">
+          <svg viewBox="0 0 80 100" fill="none" xmlns="http://www.w3.org/2000/svg" width="60">
+            <rect x="25" y="5" width="30" height="50" rx="15" fill="url(#cg)"/>
+            <defs>
+              <linearGradient id="cg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFD97D"/>
+                <stop offset="100%" stop-color="#7B5C1A"/>
+              </linearGradient>
+            </defs>
+            <path d="M10 45 Q10 75 40 75 Q70 75 70 45" stroke="url(#cg)" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <line x1="40" y1="75" x2="40" y2="92" stroke="url(#cg)" stroke-width="4" stroke-linecap="round"/>
+            <line x1="24" y1="92" x2="56" y2="92" stroke="url(#cg)" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h2>Você foi <em>convidada</em> para esse encontro</h2>
+        <p>Acreditamos que a sua trajetória, sua visão e a forma como você sustenta a sua própria verdade podem contribuir de forma significativa para essa conversa. Será uma honra ter você conosco.</p>
+        <div class="convite-details">
+          <div class="detail-item">
+            <strong>Local</strong>
+            <span>Shopping Cadima · Studeo Realize</span>
+          </div>
+          <div class="detail-sep"></div>
+          <div class="detail-item">
+            <strong>Duração</strong>
+            <span>Aprox. 1 hora</span>
+          </div>
+          <div class="detail-sep"></div>
+          <div class="detail-item">
+            <strong>Formato</strong>
+            <span>Gravação presencial</span>
+          </div>
+        </div>
+        <a href="#contato" class="btn btn-gold btn-lg">Quero Participar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CONTATO ══════════════════════════════════ -->
+  <section id="contato">
+    <div class="container">
+      <div class="contato-grid">
+        <div class="contato-info reveal">
+          <div class="section-tag">Fale Conosco</div>
+          <h2 class="section-title">Vamos criar<br/><em>um encontro?</em></h2>
+          <p>Se você deseja participar como convidada, ser parceira ou simplesmente entrar em contato, estamos aqui.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div>
+                <strong>Local de Gravação</strong>
+                <span>Shopping Cadima · Studeo Realize<br/>Último andar, próx. ao cinema</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+              <div>
+                <strong>Instagram</strong>
+                <a href="https://instagram.com/chave.mestracast" target="_blank">@chave.mestracast</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Spotify">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="contato-form-wrap reveal">
+          <form class="contato-form" id="contatoForm">
+            <h3>Envie uma mensagem</h3>
+            <div class="form-group">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="instagram">Instagram / Rede profissional</label>
+              <input type="text" id="instagram" name="instagram" placeholder="@seuperfil" />
+            </div>
+            <div class="form-group">
+              <label for="assunto">Assunto</label>
+              <select id="assunto" name="assunto">
+                <option value="">Selecione</option>
+                <option value="convidada">Quero ser convidada</option>
+                <option value="parceria">Parceria / Patrocínio</option>
+                <option value="imprensa">Imprensa</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte um pouco sobre você e seu interesse..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold btn-full">Enviar Mensagem</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ RODAPÉ ═══════════════════════════════════ -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">
+              <div class="logo-icon">
+                <svg viewBox="0 0 40 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="10" y="1" width="20" height="30" rx="10" fill="url(#fg)"/>
+                  <defs>
+                    <linearGradient id="fg" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#FFD97D"/>
+                      <stop offset="100%" stop-color="#C9A84C"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M4 24 Q4 40 20 40 Q36 40 36 24" stroke="url(#fg)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  <line x1="20" y1="40" x2="20" y2="48" stroke="url(#fg)" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="11" y1="48" x2="29" y2="48" stroke="url(#fg)" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="logo-text">
+                <span class="logo-main">CHAVE MESTRA</span>
+                <span class="logo-sub">CAST</span>
+              </div>
+            </div>
+            <p>Um espaço de escuta, profundidade e verdade. Um podcast que atravessa corpo, alma e espírito.</p>
+            <div class="footer-socials">
+              <a href="https://instagram.com/chave.mestracast" target="_blank" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </a>
+              <a href="#" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+              <a href="#" aria-label="Spotify">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="#sobre">Sobre o Podcast</a></li>
+              <li><a href="#apresentadoras">Apresentadoras</a></li>
+              <li><a href="#episodios">Episódios</a></li>
+              <li><a href="#depoimentos">Depoimentos</a></li>
+              <li><a href="#galeria">Galeria</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Ouça em</h4>
+            <ul>
+              <li><a href="#">Spotify</a></li>
+              <li><a href="#">Apple Podcasts</a></li>
+              <li><a href="#">YouTube</a></li>
+              <li><a href="#">Deezer</a></li>
+              <li><a href="#">Amazon Music</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Receba novidades</h4>
+            <p>Cadastre seu e-mail e seja a primeira a saber dos novos episódios.</p>
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" placeholder="seu@email.com" required />
+              <button type="submit" class="btn btn-gold btn-sm">Inscrever</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Chave Mestra Cast · Viviane Schott &amp; Luana Carriello · Todos os direitos reservados</p>
+        <p>Desenvolvido com <span style="color:var(--gold)"><svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="vertical-align:middle"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span> para transformar vidas</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
