@@ -855,6 +855,11 @@ section { padding: var(--section-py) 0; position: relative; }
 
 .host-img-wrap { position: relative; }
 
+/* Garante altura idêntica para ambas as fotos */
+.hosts-grid .host-img-real {
+  aspect-ratio: 3 / 4;
+}
+
 .host-badge {
   position: absolute;
   bottom: 16px;
