@@ -43,24 +43,6 @@
   --footer-bg:   #080808;
 }
 
-/* ── LIGHT THEME ───────────────────────────────────────────────────────── */
-[data-theme="light"] {
-  --bg:          #FAF8F3;
-  --bg-2:        #F2EDE2;
-  --bg-3:        #EDE6D6;
-  --bg-glass:    rgba(0,0,0,0.03);
-  --border:      rgba(123,92,26,0.18);
-  --text:        #1A1410;
-  --text-muted:  #6B5A40;
-  --text-sub:    #4A3D28;
-  --header-bg:   rgba(250,248,243,0.92);
-  --card-bg:     #FFFFFF;
-  --placeholder-bg: #EDE6D6;
-  --placeholder-border: rgba(123,92,26,0.25);
-  --form-bg:     #FFFFFF;
-  --input-bg:    #F5F0E8;
-  --footer-bg:   #1A1410;
-}
 
 /* ── RESET & BASE ──────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -401,26 +383,6 @@ ul { list-style: none; }
   flex-shrink: 0;
 }
 
-#themeToggle {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid var(--border);
-  background: var(--bg-glass);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  transition: all 0.3s var(--ease);
-}
-
-#themeToggle:hover { border-color: var(--gold); background: rgba(201,168,76,0.1); }
-
-[data-theme="dark"] .sun-icon  { display: flex; align-items: center; justify-content: center; color: var(--gold); }
-[data-theme="dark"] .moon-icon { display: none; }
-[data-theme="light"] .sun-icon  { display: none; }
-[data-theme="light"] .moon-icon { display: flex; align-items: center; justify-content: center; color: var(--gold); }
 
 #menuToggle {
   display: none;
@@ -1580,7 +1542,7 @@ section { padding: var(--section-py) 0; position: relative; }
   .footer-brand { grid-column: span 2; }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .sobre-grid,
   .contato-grid { grid-template-columns: 1fr; gap: 48px; }
 
@@ -1597,8 +1559,14 @@ section { padding: var(--section-py) 0; position: relative; }
 
   .ep-card { flex: 0 0 calc(50% - 12px); }
 
+  /* Header mobile/tablet: oculta nav, mostra hamburger e botão */
   #nav { display: none; }
   #menuToggle { display: flex; }
+
+  .header-actions {
+    gap: 10px;
+    margin-left: auto; /* empurra botão + hamburger para a direita */
+  }
 
   #nav.open {
     display: flex;
@@ -1620,6 +1588,10 @@ section { padding: var(--section-py) 0; position: relative; }
 }
 
 @media (max-width: 640px) {
+  /* Header em telas pequenas: reduz gap para logo + botão + ícone caberem */
+  .header-inner { gap: 12px; }
+  .header-actions { gap: 8px; }
+
   .footer-grid { grid-template-columns: 1fr; }
   .footer-brand { grid-column: span 1; }
 

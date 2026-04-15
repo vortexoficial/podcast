@@ -15,20 +15,9 @@ window.addEventListener('load', () => {
 
 document.body.style.overflow = 'hidden';
 
-/* ── THEME TOGGLE ───────────────────────────────────────────────────────── */
-const themeToggle = document.getElementById('themeToggle');
-const html = document.documentElement;
-
-// Persist theme
-const savedTheme = localStorage.getItem('chave-mestra-theme') || 'dark';
-html.setAttribute('data-theme', savedTheme);
-
-themeToggle.addEventListener('click', () => {
-  const current = html.getAttribute('data-theme');
-  const next = current === 'dark' ? 'light' : 'dark';
-  html.setAttribute('data-theme', next);
-  localStorage.setItem('chave-mestra-theme', next);
-});
+/* ── TEMA FIXO (dark) ───────────────────────────────────────────────────── */
+document.documentElement.setAttribute('data-theme', 'dark');
+localStorage.removeItem('chave-mestra-theme');
 
 /* ── HEADER SCROLL ──────────────────────────────────────────────────────── */
 const header = document.getElementById('header');
